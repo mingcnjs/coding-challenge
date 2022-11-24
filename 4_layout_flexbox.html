@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="flex-row flex-50">A</div>
+  <div class="flex-row flex-50">B</div>
+  <div class="flex-row flex-25">C</div>
+  <div class="flex-row flex-75">D</div>
+  <div class="flex-row flex-fill">E</div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    background-color: #fff;
+    color: #444;
+    align-items: stretch;
+    width: 430px;
+    gap: 10px;
+  }
+  .flex-row {
+    display: flex;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 150%;
+    padding: 20px;
+  }
+
+  .flex-25 {
+    flex: 1 calc(25% - 50px);
+  }
+
+  .flex-50 {
+    flex: 1 calc(50% - 50px);
+  }
+
+  .flex-75 {
+    flex: 1 calc(75% - 50px);
+  }
+
+  .flex-fill {
+    flex: 1 100%;
+  }
+</style>
